@@ -1,0 +1,107 @@
+body {
+    font-family: nunito, sans-serif;
+    background-color: whitesmoke;
+    padding: 25px;
+    margin: 0 auto;
+    width: 80%;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #72A0C1;
+    text-shadow: black 0px 1px 0px;
+  }
+  
+  h3 {
+    color: #72A0C1;
+    text-shadow: 0px 0px 0.5px black;
+  }
+  
+  nav {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  button {
+    background-color: white;
+    color: #cb364f;
+    border: hsl(350, 78%, 37%) 3px inset;
+    border-radius: 4px;
+    padding: 7px;
+    font-size: 10px;
+    inline-size: block;
+    margin-left: 9%;
+    margin-top: 1%;
+  }
+  
+  button:hover {
+    background-color: #960018;
+    color: white;
+  }
+  
+  button>a {
+    text-decoration: none;
+    color: #960018;
+  }
+  
+  h2 {
+    text-align: center;
+    color: white;
+    background-color: #960018;
+    padding: 8px;
+  
+  }
+  
+  ul {
+    list-style-type: none;
+    /* Oculta las viñetas estándar */
+  }
+  
+  ul li::before {
+    content: "★ ";
+    /* Reemplaza la viñeta con un símbolo */
+    color: #f4a261;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 8px;
+  }
+  
+  ul li:hover::before {
+    color: #9d2a6d;
+    /* Nuevo color cuando se pasa el ratón */
+  }
+  
+  .info {
+    background-color: white;
+    border: #960018 2px inset;
+    border-radius: 4px;
+    padding: 10px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  a[href^="mailto"]::after {
+    content: url('../img/mail.svg');
+    /* Icono de correo */
+  }
+  
+  a[href^="tel"]::before {
+    content: url('../img/tel.svg');
+    /* Icono de telefono */
+  }
+  
+  li>a {
+    text-decoration: none;
+  }
+  
+  li>a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    color: blue;
+  }
+  
+  a[target^="_blank"]::after {
+    content: url('../img/link.svg');
+    /* Icono de enlace externo */
+  }
+
